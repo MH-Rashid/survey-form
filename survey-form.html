@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="survey-form.css" />
+
+    <title>Survey form</title>
+  </head>
+  <body>
+    <main>
+      <h2 class="form-title">Home Improvement Consultation Form</h2>
+      <form class="main-container">
+        <label class="question-label">Name</label>
+        <input type="text" placeholder="Enter your name" />
+
+        <label class="question-label">Phone number</label>
+        <input type="text" placeholder="Enter your phone number" />
+
+        <label class="question-label">Email</label>
+        <input type="text" placeholder="Enter your email" />
+
+        <p class="question-label">Home Improvement Project</p>
+        <input type="radio" id="roofing" name="home-improvement-project" />
+        <label class="radio-label" for="roofing">Roofing</label>
+
+        <input type="radio" id="extension" name="home-improvement-project" />
+        <label class="radio-label" for="extension">Extension</label>
+
+        <input type="radio" id="conversion" name="home-improvement-project" />
+        <label class="radio-label" for="conversion">Conversion</label>
+
+        <input type="radio" id="driveway" name="home-improvement-project" />
+        <label class="radio-label" for="driveway">Driveway</label>
+
+        <input type="radio" id="landscaping" name="home-improvement-project" />
+        <label class="radio-label" for="landscaping">Landscaping</label>
+
+        <input type="radio" id="other" name="home-improvement-project" />
+        <label class="radio-label" for="other">Other</label>
+        <input type="text" placeholder="Please specify" style="margin-left: 5px" />
+
+        <label class="question-label" style="margin-bottom: 15px" for="budget">
+          What is your proposed budget?
+        </label>
+        <select name="budget" id="budget">
+          <option value="dont-know">Don't know yet</option>
+          <option value="upto10k">Upto 10k</option>
+          <option value="upto20k" selected>Upto 20k</option>
+          <option value="upto50k">Upto 50k</option>
+          <option value="upto100k">Upto 100k</option>
+        </select>
+
+        <label class="question-label"
+          >What other projects would you be interested in?
+          <input type="text" />
+        </label>
+      </form>
+    </main>
+  </body>
+</html>
